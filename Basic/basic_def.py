@@ -48,7 +48,7 @@ print (f' x from def_name function:  {x}')
 '''
 anonymous function
 '''
-# definition way   
+#  anonymous function definition way   
 func = lambda var1, var2 : print(var1 + var2)
-# call way
+# anonymous function call way
 func(1,3)
