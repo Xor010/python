@@ -16,6 +16,7 @@ def def_name_1(para1, para2):
     pass
     return
 # require way --> def_name(para1, para2)
+
 # 2 - Keyword  : change passion
 def def_name_2(para1, para2):
     pass
@@ -28,10 +29,9 @@ def def_name_3(para1 = 1, para2 = 2 ):
     pass
     return
 #default way --> in this way if you not add any value parameter will have the default value
+
 # 4 - parameter value unknown value length
-def def_name_4(para1, *para2):
-    for x in para2:
-        print(x)
-    return
+def def_name_4_1(para1, *para2):
+    return (sum(para2) + para1) #<-- Keyword way call
 # def unknown value length call way
-def_name_4(xx , o)
+print(def_name_4_1(1000, 3, 5, 60))
