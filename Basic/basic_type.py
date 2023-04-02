@@ -21,4 +21,4 @@ print(s_0.upper()) # s_0.isupper --> return boolean
 print(s_0.lower()) # s_0.islower --> return boolean
 print(s_0.title()) # s_0.istitle --> return boolean
 print(s_0.replace('A', 'D'))
-print(s_0.split('B'))
+print(s_0.split(' '))
