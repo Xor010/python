@@ -1,4 +1,4 @@
-o  = [1,2,3,4]
+o  = [1,2,3,4,5]
 x  = 1
 xx = 2
 '''Basic of def .. (Functions) in python'''
@@ -10,7 +10,7 @@ def def_name(para1 , para2, para3 ):
 '''
 parameter in python have 4 type
 '''
-# 1 - Require  
+# 1 - Require.  
 def def_name_1(para1, para2):
     pass
     pass
