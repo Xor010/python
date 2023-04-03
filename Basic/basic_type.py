@@ -66,6 +66,11 @@ x = list(tula) #<-- make tuple as list
 x.append('add this str in the end')
 T = tuple(x)
 print(T)
+# get list of tuple range()
+print(list(range(100)))
+print(list(range(40, 100)))
+print(list(range(60, 100, 10)))
+
 '''
 dictionary
 {key:value, key:value}
