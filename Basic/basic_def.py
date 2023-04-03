@@ -52,4 +52,5 @@ anonymous function
 func = lambda var1, var2 : print(var1 + var2)
 # anonymous function call way
 func(1,3)
-print('_')
+print('_-__-__-_')
+
