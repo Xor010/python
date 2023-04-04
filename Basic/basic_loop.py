@@ -30,6 +30,8 @@ nested loop
 for x in range(1,4):
     for y in range(2,5):
         print(y, x)
+
+
 '''
 control loop
 '''
@@ -44,4 +46,21 @@ for x in range(10):
     if x == 4:
         continue
     print(f'this is continue {x}')
-        
+
+'''
+Example 
+'''
+for j in range(1,10):
+    print('*'*j)
+    ''''''''''''''''''''''''''''''
+for x in range(10):
+    while x >= 0:
+        print('*', end='')
+        x-=1
+    print('')
+    ''''''''''''''''''''''''''''''''
+s = 10
+for r in range(s):
+    for b in range(r+1):
+        print('*', end='')
+    print()
