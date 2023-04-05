@@ -1,89 +1,72 @@
-# string
-s_0 = 'A B C '
-s_1 = "d e f "
-s_2 = '''
-        G 
-          h 
-            i
-      '''
-# or can use as comment
+numlist = [1,2,44,67,4,7,7,2345,23553,67]
+numtuple= (12,234,234,34222,3467,66,87,65)
+string  = 'This Is String '
 '''
-    this is comment
+print - Add - remove - create from range
 '''
-# print using format string
-print(f'this is formate string {s_2}')
-# print with concatenation
-print(s_0+s_2)  
-# repeat 3 times 
-print(s_0 * 3)
-# some methods for str [Search in google python string method]
-print(s_0.upper()) # s_0.isupper --> return boolean
-print(s_0.lower()) # s_0.islower --> return boolean
-print(s_0.title()) # s_0.istitle --> return boolean
-print(s_0.replace('A', 'D'))
-print(s_0.split(' ')) #<-- return string as list
+# - print [All]
+print(string[1])
+print(string[:3])
+print(numlist[3:6])
+print(numtuple[-1])
+print('''
+            this is print
+        ''')
+print('this is concatenate '+ string)
+print(f'print using format string :- {string}')
+print(f'multiply string :-  {string * 3} ')
 
-lisa = [1,2,3,4,11] #<-- Create list
-tula = (1,2,45.30,7,44,6) #<-- Create tuple
+# - Add [list]
+numlist.append(2424) # take value
+numlist.insert(0,2000000) # take Index, value
+numlist[2] = 20000000 # same as insert
+print(numlist)
 
-'''
-print items it's work with List and Tuple and Strings
-'''
-print(lisa[0]) #<-- print list items by INDEX
-print(lisa[-1]) #<-- print list last items by INDEX
-print(lisa[0:3]) #<-- print slice of list by INDEX
-'''
-add to List 
-'''
-print(lisa)
-lisa.insert(0,34) #<-- add into First index of list 
-lisa.append(333) #<-- add into last index of list
-lisa[4] = 4000 #<-- change value by index
-print(lisa)
-'''
-remove From List 
-'''
-lisa.pop() #<-- print & remove
-lisa.remove(11) # <-- remove by value
-del lisa[3]
-print(lisa)
-'''
-sort list
-'''
-lisa.sort()
-print(lisa)
-lisa.sort(reverse=True)
-print(lisa)
-'''
-Get min max and len for list tuple ans also str
-'''
-min(lisa)
-print(max(tula))
-print(len(s_2))
+# - remove [list]
+numlist.remove(20000000) # take vale
+print(numlist)
+numlist.pop(0) # take index
+print(numlist)
+del numlist[0] # take index
+print(numlist)
 
-# convert tuple to list and modify the re-tuple  it T = tuple(x)
-x = list(tula) #<-- make tuple as list 
-x.append('add this str in the end')
-T = tuple(x)
-print(T)
-# get list of tuple range()
+# - sorting [list]
+numlist.sort()
+numlist.reverse()
+numlist.sort(reverse=True)
+
+# - helpful method
+string.upper()
+string.lower()
+string.title()
+string.replace('e','3')
+string.split(' ') # <-- return string as list
+print(min(numtuple))
+print(max(numlist))
+print(len(string))
+
+# - create list from range
 print(list(range(100)))
-print(list(range(40, 100)))
-print(list(range(60, 100, 10)))
+print(list(range(90 , 100)))
+print(list(range(60,100,5)))
+
+# - convert from tuple to list for modify tuple
+xlist = list(numtuple)
+print(numtuple)
+xlist.append(1212112)
+xtuple = tuple(xlist)
+print(xtuple)
 
 '''
 dictionary
-{key:value, key:value}
+d = {key1: 'value1', key2:'value2'}
 '''
-dic = {'A': 1, 'B':2}
-dic.items() #<-- get all keys and values as list of tuples
-dic.keys() #<-- print all keys
-dic.values() #<- print all values
-print(dic['A']) #<-- get value By Key
-
-for key in dic: #<-- loop into dictionary and get all keys
-    print(key)
-for val in dic.values(): #<-- loop into dictionary and get all values
-    print(val)
-for key, val in dic.items(): #<-- loop into dictionary and get all values
-    print(f'{key}, {val}')
+dicx = {'ahmed' : 90, 'mohamed': 100, 9000:'mahmoud'}
+print(dicx.keys())
+print(dicx.values())
+print(dicx.items())
+for k in dicx: #<-- for will print only keys like [for k in dicx.keys()]
+    print(k)
+# ---- GET KEYS WITH VALUES
+for k,v in dicx.items():
+    print(k,v)
