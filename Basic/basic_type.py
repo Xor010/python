@@ -24,11 +24,8 @@ print(numlist)
 
 # - remove [list]
 numlist.remove(20000000) # take vale
-print(numlist)
 numlist.pop(0) # take index
-print(numlist)
 del numlist[0] # take index
-print(numlist)
 
 # - sorting [list]
 numlist.sort()
@@ -44,6 +41,18 @@ string.split(' ') # <-- return string as list
 print(min(numtuple))
 print(max(numlist))
 print(len(string))
+print(abs(-44))
+print(round(12.123,1))
+print(any([True,False,False,True]))
+print(all((True,True,False,True)))
+x = zip((1, 22, 3), [4, 5, 6])
+print(list(x))
+v = enumerate(['a', 'b', 'c'],3)
+print(list(v))
+sorted((6,2,6,9,1,5,0))
+xb = reversed([2,7, 9, 1, 5])
+print(list(xb))
+# reduce , filter , map
 
 # - create list from range
 print(list(range(100)))
