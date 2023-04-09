@@ -27,7 +27,7 @@ def def_name_2(para1, para2):
     return
 ##### Keyword call way --> def_name(para2 = value , para1 = value)
 # 3 - default 
-def def_name_3(para1 = 1, para2 = 2 ):
+def def_name_3(para1 , para2 = 2 ): # default argument Must be in the last def_name_3(para1 , para2 = 2 )
     pass
     pass
     return
