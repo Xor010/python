@@ -10,14 +10,14 @@
 
 class G:
     def __init__(self) -> None:
-        
-        print('''Welcome into my games if you wanna play game please select between[1,2]
-                 1 - First Game
-                 2 - Sec Game 
-                 3 - Exit''')
-        self.Game_n = int(input('Select Games Number :'))
         self.xo ='y'
-        while self.xo == 'y':
+        while self.xo == 'y':        
+            print('''Welcome into my games if you wanna play game please select between[1,2]
+                    1 - First Game
+                    2 - Sec Game 
+                    3 - Exit''')
+            self.Game_n = int(input('Select Games Number :'))
+
             if self.Game_n == 1:
                 pae = input('Enter Paragraph:')
                 self.paragraph(pae)
