@@ -65,7 +65,9 @@ print(numtuple)
 xlist.append(1212112)
 xtuple = tuple(xlist)
 print(xtuple)
-
+# - convert from list to str
+lop = ['i', 'love', 'god']
+print(' '.join(lop))
 '''
 dictionary
 d = {key1: 'value1', key2:'value2'}

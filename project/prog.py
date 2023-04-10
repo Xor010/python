@@ -13,7 +13,8 @@ class users():
             print(f'sorry you must be over than 18y')
     def profile(self):
         print(self.name, self.age,self.balance)
-        return  
+        return
+    
 class Bank(users):
     def __init__(self, b, n, a):
         super().__init__(b, n, a)
@@ -21,7 +22,7 @@ class Bank(users):
     def add_b(self,b):
         self.balance += b
         return self.balance
-   
+    
     def withdraw(self , hm):
         if hm < self.balance:
             self.balance -= hm
