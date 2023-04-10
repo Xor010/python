@@ -5,7 +5,7 @@ class users():
       
     def __init__(self, b, n, a):
         if a > self.age:
-            self.balance = b
+            
             self.age = a
             self.name = n
             print(f'Welcome {self.name } your balance = { b }')
@@ -15,7 +15,9 @@ class users():
         print(self.name, self.age,self.balance)
         return  
 class Bank(users):
-
+    def __init__(self, b, n, a):
+        super().__init__(b, n, a)
+        self.balance = b
     def add_b(self,b):
         self.balance += b
         return self.balance
