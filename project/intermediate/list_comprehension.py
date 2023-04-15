@@ -4,7 +4,7 @@ print(''.join(l0))
 
 
 story2 = ['i','wanna','eat','but','not','Fish']
-l1 = [i if i !='not' else '' for i in story2 ]
+l1 = [i if i !='Fish' else 'meat' for i in story2 ]
 print(' '.join(l1))
 l1 = [i for i in story2 if i !='not'  ]
 print(' '.join(l1))
