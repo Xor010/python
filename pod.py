@@ -2,6 +2,7 @@ x   = 1
 xx  = 2
 xxx = 3
 xv  = 5000
+Rty = 'test'
 
 if x == 1 and xxx == 4:
     print(False)
